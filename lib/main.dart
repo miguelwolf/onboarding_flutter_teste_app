@@ -67,6 +67,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _cleanCounter() {
+    setState(() {
+      _counter = 0;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -105,7 +111,23 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: .center,
           children: [
             const Text('You have pushed the button this many times:'),
-            Text('$_counter'),
+            Text(
+              '$_counter',
+              style: Theme.of(
+                context,
+              ).textTheme.headlineMedium?.copyWith(fontSize: 16),
+            ),
+            Container(
+              margin: const EdgeInsets.only(top: 20.0),
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.grey[100],
+                  foregroundColor: Colors.red,
+                ),
+                onPressed: _cleanCounter,
+                child: const Text("Reset Counter"),
+              ),
+            ),
           ],
         ),
       ),
@@ -113,6 +135,7 @@ class _MyHomePageState extends State<MyHomePage> {
         onPressed: _incrementCounter,
         tooltip: 'Increment',
         child: const Icon(Icons.add),
+        backgroundColor: Colors.amber,
       ),
     );
   }
