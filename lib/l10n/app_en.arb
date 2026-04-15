@@ -1,0 +1,32 @@
+{
+  "@@locale": "en",
+  "@_MAIN_SCREEN_": {},
+  "mainTitle": "Taxi Machine onboarding!",
+  "@mainTitle": {
+    "description": "Appbar title presented to the user"
+  },
+  "mainDescription": "Enter your details to sign in",
+  "@mainDescription": {
+    "description": "Description used to indicate what the user should do"
+  },
+  "mainLabelNome": "First Name",
+  "@mainLabelNome": {
+    "description": "Label indicating the Name field"
+  },
+  "mainLabelSobrenome": "Last Name",
+  "@mainLabelSobrenome": {
+    "description": "Label indicating the Last Name field"
+  },
+  "mainLabelEmail": "Email",
+  "@mainLabelEmail": {
+    "description": "Label indicating the Email field"
+  },
+  "mainAcaoEntrar": "Sign In",
+  "@mainAcaoEntrar": {
+    "description": "Sign In"
+  },
+  "mainCampoObrigatorio": "Field cannot be empty",
+  "@mainCampoObrigatorio": {
+    "description": "Error message label indicating that the field is required"
+  }
+}

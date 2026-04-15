@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'core/localization/localization_utils.dart';
 
 // Define a custom Form widget.
 class MyCustomForm extends StatefulWidget {
@@ -22,7 +23,7 @@ class MyCustomFormState extends State<MyCustomForm> {
 
   String? _validateEmptyField(String? value) {
     if (value == null || value.isEmpty) {
-      return 'Campo não pode ser vazio';
+      return LocalizationUtil.appLocalization.mainCampoObrigatorio;
     }
     return null;
   }
@@ -35,7 +36,7 @@ class MyCustomFormState extends State<MyCustomForm> {
       child: Column(
         children: [
           Text(
-            'Insira seus dados para entrar',
+            LocalizationUtil.appLocalization.mainDescription,
             style: Theme.of(
               context,
             ).textTheme.headlineMedium?.copyWith(fontSize: 16),
@@ -48,7 +49,7 @@ class MyCustomFormState extends State<MyCustomForm> {
                 child: TextFormField(
                   validator: _validateEmptyField, // Usando o método
                   decoration: InputDecoration(
-                    labelText: 'Nome',
+                    labelText: LocalizationUtil.appLocalization.mainLabelNome,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.zero),
                     ),
@@ -60,7 +61,8 @@ class MyCustomFormState extends State<MyCustomForm> {
                 child: TextFormField(
                   validator: _validateEmptyField, // Usando o mesmo método
                   decoration: InputDecoration(
-                    labelText: 'Sobrenome',
+                    labelText:
+                        LocalizationUtil.appLocalization.mainLabelSobrenome,
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.all(Radius.zero),
                     ),
@@ -74,7 +76,7 @@ class MyCustomFormState extends State<MyCustomForm> {
             padding: EdgeInsets.only(top: 12),
             child: TextFormField(
               decoration: InputDecoration(
-                labelText: 'E-mail',
+                labelText: LocalizationUtil.appLocalization.mainLabelEmail,
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.zero),
                 ),
@@ -93,10 +95,10 @@ class MyCustomFormState extends State<MyCustomForm> {
                 // 5. O momento em que a mágica acontece:
                 // O Form chama o validator de todos os campos filhos!
                 if (_formKey.currentState!.validate()) {
-                  print("Tudo certo! Prosseguindo...");
+                  // Tudo certo, pode prosseguir
                 }
               },
-              child: const Text('Entrar'),
+              child: Text(LocalizationUtil.appLocalization.mainAcaoEntrar),
             ),
           ),
         ],

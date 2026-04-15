@@ -1,0 +1,32 @@
+{
+"@@locale": "pt",
+"@_MAIN_SCREEN_": {},
+  "mainTitle": "Taxi Machine onboarding!",
+  "@mainTitle": {
+    "description": "Título da appbar apresentada ao usuário"
+  },
+  "mainDescription": "Insira seus dados para entrar",
+  "@mainDescription": {
+    "description": "Descrição utilizada para indicar o que o usuário deve fazer"
+  },
+  "mainLabelNome": "Nome",
+  "@mainLabelNome": {
+    "description": "Label indicando o campo de Nome"
+  },
+  "mainLabelSobrenome": "Sobrenome",
+  "@mainLabelSobrenome": {
+    "description": "Label indicando o campo de Sobrenome"
+  },
+  "mainLabelEmail": "E-mail",
+  "@mainLabelEmail": {
+    "description": "Label indicando o campo de Email"
+  },
+  "mainAcaoEntrar": "Entrar",
+  "@mainAcaoEntrar": {
+    "description": "Entrar"
+  },
+  "mainCampoObrigatorio": "Campo não pode ser vazio",
+  "@mainCampoObrigatorio": {
+    "description": "Label de mensagem de erro indicando que o cmapo é obrigatório"
+  }
+}
