@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'core/localization/localization_utils.dart';
+import 'package:onboarding_flutter_teste_app/mapa.dart';
 
 // Define a custom Form widget.
 class MyCustomForm extends StatefulWidget {
@@ -92,10 +93,11 @@ class MyCustomFormState extends State<MyCustomForm> {
             height: 50,
             child: ElevatedButton(
               onPressed: () {
-                // 5. O momento em que a mágica acontece:
-                // O Form chama o validator de todos os campos filhos!
                 if (_formKey.currentState!.validate()) {
-                  // Tudo certo, pode prosseguir
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute<void>(builder: (context) => const Mapa()),
+                  );
                 }
               },
               child: Text(LocalizationUtil.appLocalization.mainAcaoEntrar),
