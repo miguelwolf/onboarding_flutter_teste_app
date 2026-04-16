@@ -142,6 +142,18 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Field cannot be empty'**
   String get mainCampoObrigatorio;
+
+  /// Título da appbar apresentada ao usuário
+  ///
+  /// In en, this message translates to:
+  /// **'Taxi Machine Map'**
+  String get mapTitle;
+
+  /// Voltar
+  ///
+  /// In en, this message translates to:
+  /// **'voltar'**
+  String get mapVoltar;
 }
 
 class _AppLocalizationsDelegate

@@ -28,6 +28,12 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get mainCampoObrigatorio => 'Campo não pode ser vazio';
+
+  @override
+  String get mapTitle => 'Taxi Machine Mapa';
+
+  @override
+  String get mapVoltar => 'voltar';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -54,4 +60,10 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get mainCampoObrigatorio => 'O campo não pode estar vazio';
+
+  @override
+  String get mapTitle => 'Taxi Machine Mapa';
+
+  @override
+  String get mapVoltar => 'voltar';
 }

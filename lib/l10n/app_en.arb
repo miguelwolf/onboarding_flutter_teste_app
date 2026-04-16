@@ -28,5 +28,13 @@
   "mainCampoObrigatorio": "Field cannot be empty",
   "@mainCampoObrigatorio": {
     "description": "Error message label indicating that the field is required"
+  },
+  "mapTitle": "Taxi Machine Map",
+  "@mapTitle": {
+    "description": "Título da appbar apresentada ao usuário"
+  },
+  "mapVoltar": "Back",
+  "@mapVoltar": {
+    "description": "Botão de voltar da tela de mapa"
   }
 }

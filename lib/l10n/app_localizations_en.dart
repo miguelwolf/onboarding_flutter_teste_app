@@ -28,4 +28,10 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get mainCampoObrigatorio => 'Field cannot be empty';
+
+  @override
+  String get mapTitle => 'Taxi Machine Map';
+
+  @override
+  String get mapVoltar => 'voltar';
 }

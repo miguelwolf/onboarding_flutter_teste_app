@@ -28,5 +28,13 @@
   "mainCampoObrigatorio": "Campo não pode ser vazio",
   "@mainCampoObrigatorio": {
     "description": "Label de mensagem de erro indicando que o cmapo é obrigatório"
+  },
+  "mapTitle": "Taxi Machine Mapa",
+  "@mapTitle": {
+    "description": "Título da appbar apresentada ao usuário"
+  },
+  "mapVoltar": "voltar",
+  "@mapVoltar": {
+    "description": "Botão de voltar da tela de mapaÍ"
   }
 }
