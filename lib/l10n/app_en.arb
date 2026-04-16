@@ -33,8 +33,8 @@
   "@mapTitle": {
     "description": "Título da appbar apresentada ao usuário"
   },
-  "mapVoltar": "voltar",
+  "mapVoltar": "Back",
   "@mapVoltar": {
-    "description": "Voltar"
+    "description": "Botão de voltar da tela de mapa"
   }
 }
