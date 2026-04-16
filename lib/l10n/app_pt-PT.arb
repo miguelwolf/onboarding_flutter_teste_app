@@ -1,0 +1,32 @@
+{
+  "@@locale": "pt_PT",
+  "@_MAIN_SCREEN_": {},
+  "mainTitle": "Boas-vindas ao Taxi Machine!",
+  "@mainTitle": {
+    "description": "Título da appbar apresentada ao utilizador"
+  },
+  "mainDescription": "Insira os seus dados para entrar",
+  "@mainDescription": {
+    "description": "Descrição utilizada para indicar o que o utilizador deve fazer"
+  },
+  "mainLabelNome": "Nome",
+  "@mainLabelNome": {
+    "description": "Label indicando o campo de Nome"
+  },
+  "mainLabelSobrenome": "Apelido",
+  "@mainLabelSobrenome": {
+    "description": "Label indicando o campo de Apelido"
+  },
+  "mainLabelEmail": "E-mail",
+  "@mainLabelEmail": {
+    "description": "Label indicando o campo de Email"
+  },
+  "mainAcaoEntrar": "Entrar",
+  "@mainAcaoEntrar": {
+    "description": "Entrar"
+  },
+  "mainCampoObrigatorio": "O campo não pode estar vazio",
+  "@mainCampoObrigatorio": {
+    "description": "Label de mensagem de erro indicando que o campo é obrigatório"
+  }
+}

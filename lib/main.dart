@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding_flutter_teste_app/MyCustomForm.dart';
+import 'package:onboarding_flutter_teste_app/core/localization/localization_utils.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,7 +13,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Taxi Machine onboarding',
+      title: LocalizationUtil.appLocalization.mainTitle,
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -31,7 +32,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.amberAccent),
       ),
-      home: const MyOnboardingApp(title: 'Taxi Machine onboarding'),
+      home: MyOnboardingApp(title: LocalizationUtil.appLocalization.mainTitle),
     );
   }
 }
