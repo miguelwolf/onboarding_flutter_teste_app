@@ -149,10 +149,10 @@ abstract class AppLocalizations {
   /// **'Taxi Machine Map'**
   String get mapTitle;
 
-  /// Voltar
+  /// Botão de voltar da tela de mapa
   ///
   /// In en, this message translates to:
-  /// **'voltar'**
+  /// **'Back'**
   String get mapVoltar;
 }
 
