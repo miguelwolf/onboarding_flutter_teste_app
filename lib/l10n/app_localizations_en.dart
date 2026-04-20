@@ -33,5 +33,8 @@ class AppLocalizationsEn extends AppLocalizations {
   String get mapTitle => 'Taxi Machine Map';
 
   @override
-  String get mapVoltar => 'voltar';
+  String get mapVoltar => 'Back';
+
+  @override
+  String get rideHistoryTitle => 'Ride History';
 }

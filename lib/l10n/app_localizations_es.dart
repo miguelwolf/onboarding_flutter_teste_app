@@ -34,4 +34,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get mapVoltar => 'voltar';
+
+  @override
+  String get rideHistoryTitle => 'Historial de corridas';
 }

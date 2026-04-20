@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:onboarding_flutter_teste_app/core/localization/localization_utils.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
+import 'package:onboarding_flutter_teste_app/presentation/historico_corridas_page.dart';
 
 class Mapa extends StatefulWidget {
   const Mapa({super.key});
@@ -18,6 +19,17 @@ class _MapaState extends State<Mapa> {
 
   void _onMapCreated(GoogleMapController controller) {
     mapController = controller;
+  }
+
+  void _onHistoricoCorridasCallback() {
+    setState(() {
+      Navigator.push(
+        context,
+        MaterialPageRoute<void>(
+          builder: (context) => const HistoricoCorridasPage(),
+        ),
+      );
+    });
   }
 
   void _onBackCallback() {
@@ -96,45 +108,53 @@ class _MapaState extends State<Mapa> {
           Positioned(
             bottom: 20,
             right: 20,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.end,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              mainAxisSize: MainAxisSize.min,
               children: [
                 FloatingActionButton(
-                  onPressed: _onBackCallback,
-                  tooltip: 'Back',
+                  onPressed: _onHistoricoCorridasCallback,
+                  tooltip: 'Histórico Corridas',
                   backgroundColor: Colors.amber,
-                  heroTag: "btn4",
-                  child: const Icon(Icons.arrow_back),
+                  heroTag: 'historico_btn',
+                  child: const Icon(Icons.car_rental),
                 ),
-
-                const SizedBox(width: 10),
-
-                FloatingActionButton(
-                  onPressed: () => _onAddCallback(_center),
-                  tooltip: 'Increment',
-                  backgroundColor: Colors.amber,
-                  heroTag: "btn3",
-                  child: const Icon(Icons.add),
-                ),
-
-                const SizedBox(width: 10),
-
-                FloatingActionButton(
-                  onPressed: _onFowardCallback,
-                  tooltip: 'Foward',
-                  backgroundColor: Colors.amber,
-                  heroTag: "btn2",
-                  child: const Icon(Icons.arrow_forward),
-                ),
-
-                const SizedBox(width: 10),
-
-                FloatingActionButton(
-                  onPressed: _onRefreshCallback,
-                  tooltip: 'Refresh',
-                  backgroundColor: Colors.amber,
-                  heroTag: "btn1",
-                  child: const Icon(Icons.refresh),
+                const SizedBox(height: 10),
+                Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    FloatingActionButton(
+                      onPressed: _onBackCallback,
+                      tooltip: 'Back',
+                      backgroundColor: Colors.amber,
+                      heroTag: "btn4",
+                      child: const Icon(Icons.arrow_back),
+                    ),
+                    const SizedBox(width: 10),
+                    FloatingActionButton(
+                      onPressed: () => _onAddCallback(_center),
+                      tooltip: 'Increment',
+                      backgroundColor: Colors.amber,
+                      heroTag: "btn3",
+                      child: const Icon(Icons.add),
+                    ),
+                    const SizedBox(width: 10),
+                    FloatingActionButton(
+                      onPressed: _onFowardCallback,
+                      tooltip: 'Foward',
+                      backgroundColor: Colors.amber,
+                      heroTag: "btn2",
+                      child: const Icon(Icons.arrow_forward),
+                    ),
+                    const SizedBox(width: 10),
+                    FloatingActionButton(
+                      onPressed: _onRefreshCallback,
+                      tooltip: 'Refresh',
+                      backgroundColor: Colors.amber,
+                      heroTag: "btn1",
+                      child: const Icon(Icons.refresh),
+                    ),
+                  ],
                 ),
               ],
             ),

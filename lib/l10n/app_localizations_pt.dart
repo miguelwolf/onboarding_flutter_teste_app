@@ -34,6 +34,9 @@ class AppLocalizationsPt extends AppLocalizations {
 
   @override
   String get mapVoltar => 'voltar';
+
+  @override
+  String get rideHistoryTitle => 'Histórico de corridas';
 }
 
 /// The translations for Portuguese, as used in Portugal (`pt_PT`).
@@ -66,4 +69,7 @@ class AppLocalizationsPtPt extends AppLocalizationsPt {
 
   @override
   String get mapVoltar => 'voltar';
+
+  @override
+  String get rideHistoryTitle => 'Histórico de corridas';
 }
