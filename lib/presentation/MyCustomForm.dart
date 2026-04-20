@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'core/localization/localization_utils.dart';
-import 'package:onboarding_flutter_teste_app/mapa.dart';
+import '../core/localization/localization_utils.dart';
+import 'package:onboarding_flutter_teste_app/presentation/map.dart';
 
 // Define a custom Form widget.
 class MyCustomForm extends StatefulWidget {

@@ -34,4 +34,7 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get mapVoltar => 'Back';
+
+  @override
+  String get rideHistoryTitle => 'Ride History';
 }

@@ -36,5 +36,9 @@
   "mapVoltar": "voltar",
   "@mapVoltar": {
     "description": "Botão de voltar da tela de mapaÍ"
+  },
+  "rideHistoryTitle": "Histórico de corridas",
+  "@rideHistoryTitle": {
+    "description": "Título da tela histórico de corridas"
   }
 }

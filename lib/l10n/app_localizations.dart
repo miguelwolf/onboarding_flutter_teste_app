@@ -154,6 +154,12 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'Back'**
   String get mapVoltar;
+
+  /// Título da tela histórico de corridas
+  ///
+  /// In en, this message translates to:
+  /// **'Ride History'**
+  String get rideHistoryTitle;
 }
 
 class _AppLocalizationsDelegate

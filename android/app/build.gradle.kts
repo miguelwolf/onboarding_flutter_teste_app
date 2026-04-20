@@ -1,3 +1,5 @@
+import java.util.Properties
+
 plugins {
     id("com.android.application")
     id("kotlin-android")
@@ -9,6 +11,16 @@ android {
     namespace = "com.example.onboarding_flutter_teste_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
+
+    val secretProperties = Properties()
+    val secretPropertiesFile = rootProject.file("secret.properties")
+    if (secretPropertiesFile.exists()) {
+        secretPropertiesFile.inputStream().bufferedReader(Charsets.UTF_8).use { reader ->
+            secretProperties.load(reader)
+        }
+    } else {
+        throw GradleException("secret.properties file is missing")
+    }
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
@@ -28,6 +40,9 @@ android {
         targetSdk = flutter.targetSdkVersion
         versionCode = flutter.versionCode
         versionName = flutter.versionName
+
+        // Coloca a mapKey no manifestPlaceholders
+        manifestPlaceholders["mapKey"] = secretProperties.getProperty("mapKey")
     }
 
     buildTypes {
